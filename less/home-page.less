@@ -1,1 +1,139 @@
 // Home Content
+.home {
+
+  .main-section {
+    padding-top: 100px;
+
+    img {
+      width: 100%;
+      height: 200px;
+    }
+
+    .main-content {
+      padding: 18px 0px;
+      .padding;
+
+      h2 {
+        margin-bottom: 10px;
+        font-size: 3.2rem;
+      }
+    } // Main content end
+  } //main section end
+
+  .middle-section {
+    .br-color(@br-main-color); 
+    .padding;
+
+    .middle-imgs {
+      .center;
+      justify-content: space-between;
+
+      @media @phone {
+        justify-content: center;
+        padding-top: 25px;
+      }
+
+      .hide {
+        @media @phone {
+          display: none;
+        }
+      }
+
+      img {
+        width: 31%;
+        border-radius: 15px;
+
+        @media @phone {
+          width: 88%;
+        }
+      }
+    } //Middle images end
+
+    .middle-content {
+      margin-top: 46px;
+      padding-bottom: 63px;
+
+      @media @phone {
+        margin-top: 38px;
+      }
+
+      h3 {
+        letter-spacing: -1px;
+      }
+
+      p {
+        padding-top: 15px;
+      }
+    } //Middle content end
+  } //Middle section end
+
+
+  .lower-section {
+    padding: 47px 0 46px 0;
+    .center;
+    .br-color(@br-main-color);
+    .padding;
+
+    @media @phone {
+      flex-direction: column;
+    }
+
+    .lower-content {
+      width: 46%;
+      padding-right: 4%;
+
+      @media @phone {
+        width: 80%;
+        padding: 0 0 28px 0;
+      }
+
+      h3 {
+        letter-spacing: -1px;
+      }
+
+      p {
+        padding: 10px 0;
+
+        @media @phone {
+          padding: 12px 0;
+        }
+      }
+
+      .btn {
+        .button(33%, 37px, @button-bg, @button-color, @button-br, 5px);
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-top: 9px;
+        transition: all 0.5s ease-in-out;
+
+        transform: translate(0);
+        box-shadow: 0;
+
+        @media @phone {
+          .button(100%, 37px, @button-bg, @button-color, @button-br, 5px);
+        }
+
+        &:hover {
+          cursor: pointer;
+          transform: translate(10px 10px);
+          box-shadow: -10px -10px @button-bg;
+          background-color: @button-br;
+
+        }
+      }
+
+    }
+
+    img {
+      width: 42%;
+      height: 244px;
+      align-self: flex-start;
+
+      @media @phone {
+          width: 82%;
+          align-self: center;
+          height: 278px;
+      }
+    }
+  } //Lower section end
+} // home end
