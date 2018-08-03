@@ -1,1 +1,33 @@
-// Mixins below variables
+// Mixins
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.borderPadding {
+  border-bottom: 3px solid @mainBorderColor;
+  padding-bottom: 8%;
+}
+
+.button-generator(@background, @color, @width, @height) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: @background;
+  color: @color;
+  width: @width;
+  height: @height;
+  border: 1px solid blue;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  margin-top: 3%;
+}
+
+.keyframes(@name; @arguments) {
+  @keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+  animation: @arguments;
+}

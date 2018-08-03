@@ -1,4 +1,4 @@
-// General Styles
+// Global Styles
 
 * {
   box-sizing: border-box;
@@ -8,7 +8,37 @@ html, body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Russo One', sans-serif;
+html {
+  font-size: 62.5%;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: 'Russo One', sans-serif;
+  color: @headerFontColor;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: @paragraphFontColor;
+}
+
+.container {
+  max-width: 1000px;
+  width: 55%;
+  margin: 0 auto;
+  background-color: @mainBackgroundColor;
+  border-color: @mainBorderColor;
+
+  @media @phone {
+    width: 100%;
+  }
+}

@@ -1,1 +1,362 @@
-/* Compile your LESS first! */
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.borderPadding {
+  border-bottom: 3px solid #F6F7F8;
+  padding-bottom: 8%;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #5E6164;
+}
+.container {
+  max-width: 1000px;
+  width: 55%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border-color: #F6F7F8;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  background: #F6F6F6;
+  color: #454A59;
+  border: 3px solid #F1F1F1;
+}
+.nav .nav-title {
+  width: 100%;
+  flex-basis: 100%;
+  margin-top: 1.2%;
+  animation: wave 5s linear infinite alternate both;
+}
+@keyframes wave {
+  0% {
+    color: palevioletred;
+    background: lightblue;
+  }
+  25% {
+    color: greenyellow;
+    background: paleturquoise;
+  }
+  50% {
+    color: purple;
+    background: cornflowerblue;
+  }
+  75% {
+    color: gold;
+    background: royalblue;
+  }
+  100% {
+    color: paleturquoise;
+    background: blue;
+  }
+}
+.nav .nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 38%;
+  font-size: 1.6rem;
+  margin: 1.5% 0;
+}
+.nav .nav-links *:hover {
+  color: royalblue;
+  text-shadow: 1px 1px 10px cornflowerblue;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .nav .nav-links {
+    width: 100%;
+  }
+}
+.footer {
+  background: #F4F4F4;
+  color: #81848E;
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 4%;
+  text-align: center;
+  border: 2px solid #F1F1F1;
+  border-radius: 5px;
+}
+.headline .headline-image {
+  width: 100%;
+  height: 200px;
+}
+.headline .headline-body {
+  margin: 2% 0;
+}
+@media (max-width: 500px) {
+  .headline .headline-body {
+    width: 90%;
+    margin: 5% auto;
+  }
+}
+.headline .headline-body .headline-body-text {
+  margin: 2% 0;
+}
+.planets {
+  border-bottom: 3px solid #F6F7F8;
+  padding-bottom: 8%;
+}
+.planets .planets-images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6%;
+}
+@media (max-width: 500px) {
+  .planets .planets-images {
+    flex-wrap: wrap;
+  }
+}
+.planets .planets-images > * {
+  width: 30%;
+  height: 30%;
+  border-radius: 20px;
+}
+@media (max-width: 500px) {
+  .planets .planets-images > * {
+    margin: 0 auto;
+    width: 85%;
+    height: 85%;
+    display: none;
+  }
+  .planets .planets-images > *:nth-child(1) {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .planets .planets-body {
+    width: 90%;
+    margin: 5% auto;
+  }
+}
+.walk {
+  border-bottom: 3px solid #F6F7F8;
+  padding-bottom: 8%;
+  margin: 5% auto;
+  margin-bottom: 1%;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .walk {
+    flex-wrap: wrap;
+    width: 80%;
+  }
+}
+.walk .walk-body {
+  width: 45%;
+}
+.walk .walk-body .walk-body-text {
+  margin-top: 3%;
+}
+.walk .walk-body .walk-body-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #22283B;
+  color: white;
+  width: 35%;
+  height: 15%;
+  border: 1px solid blue;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  margin-top: 3%;
+}
+.walk .walk-body .walk-body-btn:hover {
+  color: royalblue;
+  text-shadow: 1px 1px 10px cornflowerblue;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: white;
+  border: 1px solid black;
+}
+@media (max-width: 500px) {
+  .walk .walk-body .walk-body-btn {
+    width: 100%;
+    flex-basis: 100%;
+    margin: 10% 0;
+  }
+}
+@media (max-width: 500px) {
+  .walk .walk-body {
+    width: 100%;
+  }
+}
+.walk .walk-image {
+  width: 45%;
+  height: 45%;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .walk .walk-image {
+    width: 100%;
+  }
+}
