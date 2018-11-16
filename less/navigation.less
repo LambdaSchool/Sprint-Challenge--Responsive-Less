@@ -1,1 +1,23 @@
 // Navigation code here
+nav {
+  margin-top: 18px;
+  padding-bottom: 10px;
+  width: 41%;
+  border-bottom: 1px solid @nav-border;
+  display: flex;
+  justify-content: space-around;
+  a {
+    font-size: 1.2rem;
+    color: @nav-font;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  @media @phone {
+    width: 80%;
+    a {
+      font-size: 1.3rem;
+    }
+  }
+}
