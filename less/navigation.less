@@ -1,1 +1,30 @@
-// Navigation code here
+// Navigation code here 
+
+.navigation-bar{
+   background: @sea-shell;
+   padding-top: 2%;
+   padding-bottom: 1%;
+
+   @media @phone{
+    background: none;
+   }
+
+   nav{
+       width:100%;
+       .center();
+   }
+
+   .column();
+   .center();
+
+   font-size: 3.5rem;
+   color: @nav-bg;
+
+   a{
+    .nav-links-look();
+    @media @phone{
+        .mobile-nav-padding (@mob-padding);
+    }
+   }
+
+}
